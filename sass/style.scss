@@ -1,0 +1,17 @@
+$color-salmon:#F46437;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+ }
+
+ .links {
+   font-size: 2rem;
+ }
