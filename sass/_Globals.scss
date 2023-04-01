@@ -1,23 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 $color-salmon:#F46437;
+$gradiente: linear-gradient(to right, $color-salmon, #d9b41f);
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'poppins';
 }
 
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 9vh;
-}
+    background-color: black;
+    border: 10px solid $gradiente;
+    
 
-nav ul {
+     ul {
+    margin: 0;
+    padding: 0;
     display: flex;
     width: 70%;
     justify-content: space-around;
     list-style: none;
+
+    li{
+      
+        a{
+            text-decoration: none;
+            color: linear-gradient(to right, $color-salmon, #d9b41f);
+            font-weight: 300;
+            i{
+                padding-right: 5px;
+            }
+        }
+    }
+    }
  }
 
  .links {
